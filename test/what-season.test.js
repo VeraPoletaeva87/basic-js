@@ -19,11 +19,11 @@ describe('What season', () => {
     //Specific requirements
 
     describe('base requirements', () => {
-        it.optional('returns proper value', () => {   
-            const [ 
-                winter, 
-                spring, 
-                summer, 
+        it.optional('returns proper value', () => {
+            const [
+                winter,
+                spring,
+                summer,
                 autumn,
             ] = [
                 new Date(2019, 11, 22, 23, 45, 11, 500),
@@ -38,10 +38,10 @@ describe('What season', () => {
         });
 
         it.optional('returns proper value if date is before 1970', () => {
-            const [ 
-                winter, 
-                spring, 
-                summer, 
+            const [
+                winter,
+                spring,
+                summer,
                 autumn,
             ] = [
                 new Date(1900, 0, 22, 23, 45, 11, 500),
@@ -56,10 +56,10 @@ describe('What season', () => {
         });
 
         it.optional('returns proper value (month index)', () => {
-            const [ 
-                winter, 
-                spring, 
-                summer, 
+            const [
+                winter,
+                spring,
+                summer,
                 autumn,
             ] = [
                 new Date(2025, 1, 22, 23, 45, 11, 500),
